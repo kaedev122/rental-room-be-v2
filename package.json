@@ -20,11 +20,37 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@nestjs/axios": "^4.0.0",
     "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
+    "@nestjs/cqrs": "^11.0.3",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/mongoose": "^11.0.3",
+    "@nestjs/passport": "^11.0.5",
     "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/swagger": "^11.2.0",
+    "axios": "^1.9.0",
+    "bcryptjs": "^3.0.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "compression": "^1.8.0",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.13",
+    "express-ctx": "^0.1.1",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.15.1",
+    "nest-winston": "^1.10.2",
+    "nestjs-i18n": "^10.5.1",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
@@ -68,6 +94,32 @@
       "**/*.(t|j)s"
     ],
     "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "moduleNameMapper": {
+      "@constants/(.*)": [
+        "<rootDir>/constants/$1"
+      ],
+      "@decorators/(.*)": [
+        "<rootDir>/decorators/$1"
+      ],
+      "@modules/(.*)": [
+        "<rootDir>/modules/$1"
+      ],
+      "@interfaces/(.*)": [
+        "<rootDir>/interfaces/$1"
+      ],
+      "@common/(.*)": [
+        "<rootDir>/common/$1"
+      ],
+      "@types/(.*)": [
+        "<rootDir>/types/$1"
+      ],
+      "@shared/(.*)": [
+        "<rootDir>/shared/$1"
+      ],
+      "@middleware/(.*)": [
+        "<rootDir>/middleware/$1"
+      ]
+    }
   }
 }

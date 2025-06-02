@@ -1,0 +1,298 @@
+{
+  "fields": {
+    "plsChooseValidRole": "Please select a valid role",
+    "isEmail": "Email format is wrong",
+    "pwdWrong": "Password requires at least 8 characters, one capital letter, one number, and one special character",
+    "invalidPhone": "Invalid phone number",
+    "CUSTOM_REQUIRED": "{field} is a required field",
+    "CUSTOM_INVALID_FORMAT": "{field} format is wrong",
+    "CUSTOM_INVALID": "Invalid {field}",
+    "CUSTOM_NOT_FOUND": "{field} not found",
+    "invalidOtp": "Wrong OTP. Please re-enter!",
+    "wrongRePassword": "Wrong new password. Please re-enter!",
+    "maxCharacter": "{field} maximum is {num} characters.",
+    "plsChooseValidTier": "Please select a valid tier",
+    "reqTierWithSeller": "Tier is required with role Seller",
+    "noSpaces": "{field} is a no spaces allowed"
+  },
+  "userNotFound": "User Not Found",
+  "passwordIncorrect": "Password incorrect",
+  "otpExpired": "OTP code has expired!",
+  "user": {
+    "notFound": "No account has been created with this email.",
+    "UNVERIFY_MESSAGE": "Your account was inactive.",
+    "USER_EXISTED": "This account was existed!",
+    "USER_DOES_EXIST": "Email does exist",
+    "EMAIL_OR_PWD_INVALID": "Email or password is wrong.",
+    "PWD_WRONG": "Password is wrong. Please re-enter!",
+    "ACCOUNT_WAS_INACTIVE": "Your account was unverified or inactive, please contact admin for assistance.",
+    "wrongOTPTooManyTime": "You have entered the wrong OTP 5 times. Try again after 2 hours.",
+    "resendOTPTooManyTime": "You have Resend OTP 5 times. Please try again after 2 hours.",
+    "resendVerifyTooManyTime": "You have Resend Verify 5 times. Please try again after 2 hours.",
+    "TRY_FPW_AFTER_8H": "You have reset your password before, please try again after at least 8 hours or contact admin for assistance."
+  },
+  "resource": {
+    "DUPLICATE": "Duplicate name entered"
+  },
+  "permission": {
+    "PERMISSION_NAME_EXISTED": "Name is exist",
+    "PERMISSION_NAME_EMPTY": "Name is required",
+    "RESOURCE_NOT_EXIST": "Resource not exist",
+    "PERMISSION_NOT_EXIST": "Permission not exist",
+    "NAME_NOT_EXIST": "Name not exist"
+  },
+  "unit": {
+    "DUPLICATE": "The unit of measure already exists"
+  },
+  "COMMON": {
+    "INTERNAL_SERVER_ERROR": "Internal Server Error",
+    "ERROR_TRY_AGAIN": "An error has occurred. Please try again",
+    "DUPLICATE": "Duplicate name entered",
+    "BAD_REQUEST": "Bad request",
+    "NOT_ACCEPTABLE": "Not acceptable"
+  },
+  "notification": {
+    "ADD_SYSTEM_NOTI_ERROR": "Create notification failed!",
+    "NAME_IS_NOT_CHARACTER": "The name does not contain special characters!",
+    "NAME_IS_REQUIRED": "Name is required!",
+    "TITLE_IS_REQUIRED": "Title is required!",
+    "CONTENT_IS_REQUIRED": "Content is required!",
+    "CONTENT_TOO_LONG": "Resource names cannot exceed 5000 characters!",
+    "NOTIFICATION_NOTFOUND": "Notification not found!"
+  },
+  "email": {
+    "ADD_EMAIL_ERROR": "Create email failed!",
+    "EMAIL_NOT_FOUND": "Email not found!",
+    "NAME_IS_NOT_CHARACTER": "The name does not contain special characters!",
+    "NAME_IS_REQUIRED": "Name is required!",
+    "SUBJECT_IS_REQUIRED": "Title is required!",
+    "CONTENT_IS_REQUIRED": "Content is required!",
+    "EMAIL_NOT_SENT": "Email sending failed.",
+    "DESCRIPTION_TOO_LONG": "Description cannot exceed 1000 characters!"
+  },
+  "material": {
+    "EXIST": "Name of the existing raw material!"
+  },
+  "supplier": {
+    "SUPPLIER_NAME_ALREADY_EXISTS": "Supplier name already exists!"
+  },
+  "cronjob": {
+    "CRONJOB_EXIST": "Cronjob exist",
+    "CRONJOB_NAME_EXISTED": "This cronjob name was existed!"
+  },
+  "role": {
+    "notFound": "Role not found"
+  },
+  "tax": {
+    "notFound": "Tax not found"
+  },
+  "printArea": {
+    "NAME_ALREADY_EXISTS": "The Print area name already exists!",
+    "PRINT_AREA_NOT_FOUND": "Print area not found!",
+    "DELETE_FAILED_PRINT_AREA": "The print area is assigned to the following template artworks: [{data}]. Please remove the print area from the template artworks before deleting the print area!"
+  },
+  "store": {
+    "STORE_NAME_ALREADY_EXISTS": "Stores name already exists!",
+    "NOT_FOUND": "Store not found!",
+    "ALLOWED_HOURS": "Allowed time ranges from 1- 72 hours. Please re-enter!"
+  },
+  "templateArtwork": {
+    "name": "The Template artwork name already exists",
+    "printArea": "Print area has been created template artwork",
+    "TEMPLATE_ARTWORK_NOT_FOUND": "Template artwork not found!",
+    "ERROR_FORMAT_FILE": "You can only upload {fields} file!",
+    "ERROR_SIZE_IMAGE": "Image must smaller than 100MB!",
+    "ARTWORK_NOT_MATCH_TEMPLATE": "The artwork does not match with template. Requirement artwork: {requirement}, Your artwork: {current}"
+  },
+  "step": {
+    "STEP_NAME_ALREADY_EXISTS": "Step name already exists!"
+  },
+  "option": {
+    "OPTION_NAME_ALREADY_EXISTS": "The option name already exists!",
+    "ALIAS_NAME_ALREADY_EXISTS": "Other name already exists!",
+    "OPTION_NOT_FOUND": "Option not found!"
+  },
+  "productGroup": {
+    "PRODUCT_GROUP_NOT_FOUND": "Product group not found!",
+    "name": "Product group name already exists",
+    "code": "Product group code already exists",
+    "productTypeRequired": "Product type is a required field",
+    "productTypeNotExist": "Product type not exist"
+  },
+  "productType": {
+    "NAME_CODE_VALIDATE": "Name code product type is not match validate",
+    "CREATE_PRODUCT_TYPE_REQUIRED": "Please fill all required data",
+    "SOMETHING_WENT_WRONG": "Something went wrong!",
+    "TEMPLATE_ARTWORK_VARIANT_REQUIRED": "Template artwork is required in variant!",
+    "OPTION_VARIANT_REQUIRED": "Option is required in variant!",
+    "EXIST_PRODUCT_TYPE": "This Product Type is exist!",
+    "NOT_EXIST_PRODUCT_TYPE": "This Product Type is not exist!"
+  },
+  "order": {
+    "invalidOrderType": "Invalid order type",
+    "invalidOrderShipBy": "Invalid order ship by",
+    "invalidFormatCountry": "Shipping country must be country code.",
+    "invalidFormatProvince": "Shipping province must be province code.",
+    "invalidCountryOrState": "Shipping country or province is invalid",
+    "invalidState": "Shipping province is invalid",
+    "maximumQuantityOrder": "The maximum total number of products in an order is 1000.",
+    "invalidSellerOrderCodeFormat": "sellerOrderCode must not exceed 100 characters and must not contain special characters.",
+    "invalidPostalFormat": "postalCode must have at least 4 characters, maximum 12 characters and cannot contain special characters.",
+    "invalidPostalFormatV1": "Invalid ZIP code format. Please enter a 5-digit ZIP code or a ZIP+4 code (e.g., 12345 or 12345-6789).",
+    "skuNotExistsOrInactive": "Sku/variant not found or not activated. Sku/variant requested: {sku}",
+    "skuNotAvailable": "This sku/variant is not available fee. Please contact support for assistance. Sku/variant requested: {sku}",
+    "productNotExistsOrInactive": "Product not found or not activated. Sku/variant requested: {sku}{code}",
+    "storeNotExists": "We couldn't find your store or your store hasn't been activated. Please check and try again.",
+    "exists": "An order already exists with your order code. Your order code: {code}",
+    "noteFoundOrderToExport": "Order export failed. No orders were found matching the conditions.",
+    "maxLimitExport60d": "Please export the data within 60 days!",
+    "invalidOrderConfirmAddress": "Shipping address can only be confirmed on not verify orders!",
+    "ordNotFound": "Order not found or order does not exist. Code: {code}",
+    "orderNotFound": "Order not found or order does not exist.",
+    "quantityRSMustLessThanOrigin": "The quantity of resend products must be less than the original quantity.",
+    "plsUseOtherPlatformLabelUrl": "Please use the label file URL of a platform other than TikTok, for example Google Drive,...",
+    "plsProcessArtworkImageServer": "The system is currently checking the artwork for the order. Please try again in a few minutes!",
+    "orderCancel": "Cancel order failed!. Please try again!",
+    "shippingServiceOrCarrierNotMatch": "Shipping service or carrier is not match",
+    "shippingServiceNotActive": "Shipping service is not active",
+    "shippingServiceNotFound": "Shipping service or Carrier not found",
+    "requiredPrintAreaMissing": "Required print area {printAreaName} is missing for SKU: {sku}",
+    "shippingInfoIsUpdate": "Shipping info is updating, please contact admin for assistance",
+    "productPriceIsUpdate": "Product price is updating, please contact admin for assistance"
+  },
+  "trackingLog": {
+    "notFound": "Tracking number not found!",
+    "alreadyCanceled": "Tracking number already canceled!",
+    "alreadyUsed": "Tracking number already used!",
+    "failed": "Cancel tracking number failed!",
+    "notOwner": "You do not have permission to cancel this tracking number!"
+  },
+  "qc": {
+    "BARCODE_INVALID": "This barcode is invalid!",
+    "BARCODE_NOT_IN_STEP": "This product is not in this step!",
+    "BARCODE_CANCELED": "The order has been canceled, the barcode cannot be used",
+    "BARCODE_NOT_QC": "This product is not in this step!",
+    "QC_IMPORT_FAILED_DES": "Imported data contains errors. Please check the specific errors in the error file returned to the device!",
+    "BARCODE_FAILED_IN_STEP": "This product has scan error in {step}!",
+    "BARCODE_SCAN_AGAIN": "This product has scan again!"
+  },
+  "ship": {
+    "NOT_FOUND": "This tracking number is invalid!",
+    "NOT_SUCCESS": "Scan unsuccessful. Please try again or contact the administrator for assistance",
+    "BARCODE_CANCELED": "The order has been canceled, the tracking number cannot be used"
+  },
+  "variant": {
+    "not_found": "Variant not found!",
+    "IMPORT_FAILED": "An error has occurred. Please check the details in the file returned to the device!",
+    "cost_REQUIRED": "Cost is required",
+    "fee_REQUIRED": "Fee is required",
+    "height_REQUIRED": "Height is required",
+    "length_REQUIRED": "Length is required",
+    "productTypeId_REQUIRED": "Product Code is required",
+    "shippingCost_REQUIRED": "Shipping Cost is required",
+    "shippingFee_REQUIRED": "Shipping Fee is required",
+    "sku_REQUIRED": "SKU is required",
+    "unitShipping_REQUIRED": "Unit Shipping is required",
+    "variantId_REQUIRED": "Variant Id is required",
+    "weight_REQUIRED": "Weight is required",
+    "SKU_REQUIRED": "Sku is required",
+    "PRICE_REQUIRED": "Price is required",
+    "TIER_REQUIRED": "Tier is required",
+    "width_REQUIRED": "Width is required",
+    "cost_REQUIRED_NUMBER": "Cost must be a number",
+    "fee_REQUIRED_NUMBER": "Fee must be a number",
+    "height_REQUIRED_NUMBER": "Height must be a number",
+    "length_REQUIRED_NUMBER": "Length must be a number",
+    "productTypeId_REQUIRED_NUMBER": "Product Code must be a number",
+    "shippingCost_REQUIRED_NUMBER": "Shipping Cost must be a number",
+    "shippingFee_REQUIRED_NUMBER": "Shipping Fee must be a number",
+    "sku_REQUIRED_NUMBER": "SKU must be a number",
+    "unitShipping_REQUIRED_NUMBER": "Unit Shipping must be a number",
+    "variantId_REQUIRED_NUMBER": "Variant Id must be a number",
+    "weight_REQUIRED_NUMBER": "Weight must be a number",
+    "width_REQUIRED_NUMBER": "Width must be a number",
+    "tierZero_REQUIRED_NUMBER": "Product price (Tier 0) must be a number",
+    "tierOne_REQUIRED_NUMBER": "Product price (Tier 1) must be a number",
+    "tierTwo_REQUIRED_NUMBER": "Product price (Tier 2) must be a number",
+    "tierThree_REQUIRED_NUMBER": "Product price (Tier 3) must be a number",
+    "tierFour_REQUIRED_NUMBER": "Product price (Tier 4) must be a number",
+    "additionalFee_REQUIRED_NUMBER": "Additional fee must be a number",
+    "unitAssize_REQUIRED_NUMBER": "Unit Assize must be a number",
+    "EMPTY_DATA": "Variant is not empty!"
+  },
+
+  "heating": {
+    "BARCODE_INVALID": "This barcode is invalid!",
+    "BARCODE_NOT_IN_STEP": "This product is not in this step!",
+    "BARCODE_CANCELED": "The order has been canceled, the barcode cannot be used",
+    "BARCODE_SCAN_AGAIN": "This product has scan again!"
+  },
+
+  "print": {
+    "INVALID_BARCODE": "This barcode is invalid!",
+    "NOT_IN_STEP": "This product is not in this step!",
+    "ORDER_CANCELED": "The order has been canceled, the barcode cannot be used!",
+    "ITEM_SCANNED": "This product has scan again!",
+    "ITEM_HOLD": "The order has been put on hold!"
+  },
+  "package": {
+    "BARCODE_INVALID": "This barcode is invalid!",
+    "BARCODE_NOT_IN_STEP": "This product is not in this step!",
+    "BARCODE_CANCELED": "The order has been canceled, the barcode cannot be used",
+    "BARCODE_NOT_PACKAGE": "This product is not in this step!",
+    "BARCODE_SCAN_AGAIN": "This product has scan again!",
+    "LABEL_REFUND_FAILED": "Refund label failed!",
+    "CREATE_TRACKING_LOG_FAILED": "Create tracking log failed!",
+    "ORDER_NOT_FOUND": "Order not found!",
+    "DIMENSION_CHANGED": "Order size does not change!",
+    "LABEL_TIKTOK": "This order is a TikTok order, do not weigh!"
+  },
+
+  "label": {
+    "INVALID_BARCODE": "This barcode is invalid!",
+    "NOT_IN_STEP": "This product is not in this step!",
+    "ORDER_CANCELED": "The order has been canceled, the barcode cannot be used!",
+    "BARCODE_SCAN_AGAIN": "This product has scan again!",
+    "INVALID_TRACKING": "The order does not have a label yet",
+    "BARCODE_PROCESSING": "This barcode is not finished to scan the label!"
+  },
+  "defaultPrice": {
+    "name": "Price name already exists"
+  },
+  "tier": {
+    "NAME_ALREADY_EXISTS": "Tier name already exists",
+    "CODE_ALREADY_EXISTS": "Tier code already exists"
+  },
+  "shippingService": {
+    "name": "Service name already exists!",
+    "code": "Service code already exists!"
+  },
+  "shippingServicePrice": {
+    "existed": "Weight range already exists, please check again!",
+    "weightError": "From weight must not be greater than To weight, please check again!",
+    "stateError": "State is required, please check again!"
+  },
+  "carrier": {
+    "name": "Carrier name already exist!",
+    "code": "Carrier code already exist!"
+  },
+  "topup": {
+    "TRANSACTION_EXIST": "Topup transaction ID already exists!"
+  },
+  "payment": {
+    "FAILED": "Payment failed! Please try again.",
+    "NO_ORDER_PAYMENT": "Not found orders or orders have been paid or orders have been canceled.",
+    "INSUFFICIENT_BALANCE": "Insufficient balance for payment."
+  },
+  "cancel": {
+    "INSUFFICIENT_BALANCE_ADMIN": "Insufficient balance for cancel order.",
+    "CONTACT_ADMIN": "An error has occurred. Please try again or contact supporter."
+  },
+  "surcharge": {
+    "ADD_SURCHARGE_FAILED": "Add surcharge failed!. Please try again."
+  },
+  "sent": {
+    "AMOUNT_GREAT_THAN_ZERO": "Amount must be greater than 0!",
+    "INSUFFICIENT_BALANCE": "The deposited amount must be less than or equal to the balance."
+  }
+}

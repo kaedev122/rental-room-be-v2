@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "dtos",
+        "maxlength"
+    ],
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "prettier",
+    "editor.formatOnSave": true,
+}

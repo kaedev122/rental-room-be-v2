@@ -1,0 +1,142 @@
+{
+  "user": {
+    "created": "Create new user successfully!",
+    "changePwd": "Password changed successfully!",
+    "REGISTER": "Account registration successful!",
+    "VERIFY_SUCCESS": "Account verify successful!!",
+    "CREATE_API_KEY_SUCCESS": "Create API key successfully!",
+    "REVOKE_API_KEY_SUCCESS": "Revoke API key successfully!"
+  },
+  "role": {
+    "created": "New role created successfully!"
+  },
+  "resource": {
+    "created": "Created new resource successfully!"
+  },
+  "permission": {
+    "created": "Created new permission successfully!"
+  },
+  "getData": "Get data successfully!",
+  "changeStatus": "Change status successfully!",
+  "updated": "Update successfully!",
+  "confirmAddressSuccess": "Shipping address verification successful",
+
+  "notification": {
+    "ADD_SYSTEM_NOTI_SUCCESS": "Create notification successfully!",
+    "UPDATE_SYSTEM_NOTI_SUCCESS": "Information updated successfully!",
+    "UPDATE_STT_SYSTEM_NOTI_SUCCESS": "Status updated successfully!",
+    "DELETE_NOTI_SUCCESS": "Notification deleted successfully!"
+  },
+  "email": {
+    "ADD_EMAIL_SUCCESS": "Create email successfully!",
+    "ADD_VARIABLE_SUCCESS": "Create new variable successfully!",
+    "UPDATE_EMAIL_SUCCESS": "Information updated successfully!",
+    "UPDATE_STT_EMAIL_SUCCESS": "Status updated successfully!",
+    "DELETE_EMAIL_SUCCESS": "Email deleted successfully!"
+  },
+
+  "success": "Successfully!",
+  "createSuccess": "Create successfully!",
+
+  "suppliers": {
+    "ADD_SUPPLIER_SUCCESS": "Created new supplier successfully!",
+    "UPDATE_SUPPLIER_SUCCESS": "Information updated successfully!",
+    "UPDATE_STT_SUPPLIER_SUCCESS": "Status updated successfully!"
+  },
+  "material": {
+    "CREATE_MATERIAL_SUCCESS": "Created new material successfully!"
+  },
+
+  "unit_created": "Created new unit successfully!",
+  "warehouse_created": "Created new warehouse successfully!",
+
+  "informationUpdated": "Information updated successfully!",
+
+  "printArea": {
+    "CREATE_PRINT_AREA_SUCCESS": "Create new Print area successfully!",
+    "UPDATE_PRINT_AREA_SUCCESS": "Information updated successfully!",
+    "DELETE_PRINT_AREA_SUCCESS": "Print area deleted successfully!"
+  },
+  "store": {
+    "CREATE_STORE_SUCCESS": "Create new store successfully!"
+  },
+  "step": {
+    "CREATE_STEP_SUCCESS": "Create new step successfully!"
+  },
+  "option": {
+    "CREATE_OPTION_SUCCESS": "Create new option successfully!"
+  },
+  "common": {
+    "UPDATE_SUCCESS": "Information updated successfully!"
+  },
+  "productType": {
+    "CREATE_PRODUCT_TYPE": "Create new product type successfully!"
+  },
+  "variant": {
+    "IMPORT_SUCCESS": "Upload file successfully! Please wait 1 – 2 minutes for us to update your information on the system!",
+    "SUCCESS": "Information update successfully!"
+  },
+  "qc": {
+    "GET_ITEM_SUCCESS": "Get item information successfully!",
+    "SCAN_ERROR": "Quality checking (Fail) success!",
+    "SCAN_SUCCESS": "Quality checking (Pass) success!"
+  },
+  "ship": {
+    "SCAN_SUCCESS": "The order has been completed!"
+  },
+  "order": {
+    "created": "Your order has been created successfully.",
+    "requestResend": "Request resend order successfully!",
+    "orderCancel": "Order successfully canceled!",
+    "orderHold": "Order successfully placed on hold!",
+    "orderUnHold": "Successfully released hold on the order!",
+    "backErrArtSuccess": "Artwork error sent successfully!",
+    "orderWeighted": "The order has been weighted!",
+    "orderPackaged": "The order has been packaged!",
+    "updateNoteOrder": "Successfully updated a note to the order!"
+  },
+  "trackingLog": {
+    "trackingCancel": "Tracking number canceled successfully!"
+  },
+  "print": {
+    "PRINT_FAILED": "Marking the product as failed in the printing step successfully!"
+  },
+
+  "heating": {
+    "GET_ITEM_SUCCESS": "Get item information successfully!",
+    "SCAN_ERROR": "Scan heating (Fail) success!",
+    "SCAN_SUCCESS": "This product has heated!"
+  },
+  "package": {
+    "SCAN_SUCCESS": "Packaged item successfully!"
+  },
+  "assizes": {
+    "SCAN_SUCCESS": "The order has been weighted!",
+    "SCAN_SUCCESS_BUY_LABEL": "Order has been weighed, going to buy labels!"
+  },
+  "label": {
+    "LABELED": "The order has been labeled!"
+  },
+  "tier": {
+    "created": "New tier created successfully!",
+    "updated": "Information updated successfully!"
+  },
+  "topup": {
+    "CREATE_TOPUP_SUCCESS": "Successfully created a deposit request. Please wait for the accounting department to verify and confirm!",
+    "DECLINE_TOPUP_SUCCESS": "Top-up declined successfully!",
+    "ACCEPT_TOPUP_SUCCESS": "Topup request confirmed successfully!"
+  },
+  "payment": {
+    "SUCCESS": "Payment orders successfully",
+    "SEND_SUCCESS": "Sending money to seller {email} successfully!"
+  },
+  "surcharge": {
+    "ADD_SURCHARGE_SUCCESS": "Successfully added a surcharge to the order!"
+  },
+  "refund": {
+    "SUCCESS": "Refund order successfully!"
+  },
+  "orderDeclaration": {
+    "SUCCESS": "Customs declaration successful!"
+  }
+}

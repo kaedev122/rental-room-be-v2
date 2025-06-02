@@ -1,0 +1,296 @@
+{
+  "fields": {
+    "plsChooseValidRole": "Vui lòng chọn vai trò hợp lệ",
+    "isEmail": "Sai định dạng email",
+    "pwdWrong": "Mật khẩu yêu cầu ít nhất 12 ký tự, một chữ cái in hoa, một chữ số và một ký tự đặc biệt",
+    "invalidPhone": "Số điện thoại không hợp lệ",
+    "CUSTOM_REQUIRED": "{field} là trường bắt buộc",
+    "CUSTOM_INVALID_FORMAT": "Sai định dạng {field}",
+    "CUSTOM_INVALID": "{field} không hợp lệ",
+    "CUSTOM_NOT_FOUND": "{field} không tồn tại",
+    "invalidOtp": "Sai OTP. Vui lòng nhập lại!",
+    "wrongRePassword": "Sai mật khẩu mới. Vui lòng nhập lại!",
+    "maxCharacter": "{field} tối đa là {num} ký tự.",
+    "plsChooseValidTier": "Vui lòng chọn tier hợp lệ",
+    "reqTierWithSeller": "Tier là bắt buộc đối với vai trò Seller",
+    "noSpaces": "{field} không được nhập dấu cách"
+  },
+  "userNotFound": "Tài khoản không tồn tại",
+  "passwordIncorrect": "Mật khẩu không chính xác",
+  "otpExpired": "Mã OTP đã hết hạn!",
+  "user": {
+    "notFound": "Chưa có tài khoản được tạo bởi email này.",
+    "UNVERIFY_MESSAGE": "Tài khoản này chưa được kích hoạt",
+    "USER_EXISTED": "Tài khoản này đã tồn tại!",
+    "USER_DOES_EXIST": "Email đã tồn tại",
+    "EMAIL_OR_PWD_INVALID": "Email hoặc mật khẩu sai.",
+    "PWD_WRONG": "Sai mật khẩu. Vui lòng nhập lại!",
+    "ACCOUNT_WAS_INACTIVE": "Tài khoản của bạn chưa kích hoạt hoặc đang bị khóa, hãy liên hệ quản trị viên để được hỗ trợ.",
+    "wrongOTPTooManyTime": "Bạn đã nhập sai OTP 5 lần. Hãy thử lại sau 2 giờ.",
+    "resendOTPTooManyTime": "Bạn đã gửi lại OTP 5 lần. Hãy thử lại sau 2 giờ.",
+    "resendVerifyTooManyTime": "Bạn đã gửi lại mã xác thực 5 lần. Hãy thử lại sau 2 giờ.",
+    "TRY_FPW_AFTER_8H": "Bạn đã đặt lại mật khẩu trước đó, hãy thử lại sau ít nhất 8h hoặc liên hệ quản trị viên để được trợ giúp."
+  },
+  "resource": {
+    "DUPLICATE": "Đã nhập tên trùng lặp"
+  },
+  "permission": {
+    "PERMISSION_NAME_EXISTED": "Tên đã tồn tại",
+    "PERMISSION_NAME_EMPTY": "Tên là bắt buộc",
+    "RESOURCE_NOT_EXIST": "Resource không tồn tại",
+    "PERMISSION_NOT_EXIST": "Chức năng không tồn tại",
+    "NAME_NOT_EXIST": "Tên không tồn tại"
+  },
+  "unit": {
+    "DUPLICATE": "Đơn vị tính đã tồn tạ"
+  },
+  "COMMON": {
+    "INTERNAL_SERVER_ERROR": "Lỗi máy chủ",
+    "ERROR_TRY_AGAIN": "Có lỗi xảy ra. Vui lòng thử lại",
+    "DUPLICATE": "Đã nhập tên trùng lặp",
+    "BAD_REQUEST": "Bad request",
+    "NOT_ACCEPTABLE": "Not acceptable"
+  },
+  "notification": {
+    "ADD_SYSTEM_NOTI_ERROR": "Tạo thông báo thất bại!",
+    "NAME_IS_NOT_CHARACTER": "Tên không được chứa ký tự đặc biệt!",
+    "NAME_IS_REQUIRED": "Name là trường bắt buộc!",
+    "TITLE_IS_REQUIRED": "Tiêu đề là trường bắt buộc!",
+    "CONTENT_IS_REQUIRED": "Nội dung là trường bắt buộc!",
+    "CONTENT_TOO_LONG": "Nội dung không được quá 5000 kí tự!",
+    "NOTIFICATION_NOTFOUND": "Thông báo không tồn tại!"
+  },
+  "email": {
+    "ADD_EMAIL_ERROR": "Tạo thông báo thất bại!",
+    "EMAIL_NOT_FOUND": "Không tìm thấy email!",
+    "NAME_IS_NOT_CHARACTER": "Tên không được chứa ký tự đặc biệt!",
+    "NAME_IS_REQUIRED": "Name là trường bắt buộc!",
+    "SUBJECT_IS_REQUIRED": "Tiêu đề là trường bắt buộc!",
+    "CONTENT_IS_REQUIRED": "Nội dung là trường bắt buộc!",
+    "EMAIL_NOT_SENT": "Gửi email không thành công",
+    "DESCRIPTION_TOO_LONG": "Mô tả không được quá 255 kí tự!"
+  },
+  "material": {
+    "EXIST": "Nguyên vật liệu đã tồn tại!"
+  },
+  "supplier": {
+    "SUPPLIER_NAME_ALREADY_EXISTS": "Tên nhà cung cấp đã tồn tại!"
+  },
+  "cronjob": {
+    "CRONJOB_EXIST": "Cronjob không tồn tại",
+    "CRONJOB_NAME_EXISTED": "Tên cronjob này đã tồn tại!"
+  },
+  "role": {
+    "notFound": "Không tìm thấy role"
+  },
+  "tax": {
+    "notFound": "Không tìm thấy thuế",
+    "existed": "Thuế không tồn tại"
+  },
+  "printArea": {
+    "NAME_ALREADY_EXISTS": "Tên Vùng in đã tồn tại!",
+    "PRINT_AREA_NOT_FOUND": "Không tìm thấy vùng in!",
+    "DELETE_FAILED_PRINT_AREA": "Vùng in đang được gán với các template artwork: [{data}]. Vui lòng gỡ vùng in khỏi template artwork trước khi xóa vùng in!"
+  },
+  "store": {
+    "STORE_NAME_ALREADY_EXISTS": "Tên cửa hàng đã tồn tại!",
+    "NOT_FOUND": "Không tìm thấy cửa hàng!",
+    "ALLOWED_HOURS": "Thời gian cho phép nằm trong khoảng từ 1- 72 giờ!"
+  },
+  "templateArtwork": {
+    "name": "Tên template artwork đã tồn tại",
+    "printArea": "Khu vực in đã được tạo template artwork",
+    "TEMPLATE_ARTWORK_NOT_FOUND": "Không tìm thấy template artwork!",
+    "ERROR_FORMAT_FILE": "You can only upload {fields} file!",
+    "ERROR_SIZE_IMAGE": "Hình ảnh phải nhỏ hơn 100MB!",
+    "ARTWORK_NOT_MATCH_TEMPLATE": "Thiết kế không khớp với mẫu. Thiết kế đề xuất: {requirement}. Thiết kế của bạn: {current}."
+  },
+  "step": {
+    "STEP_NAME_ALREADY_EXISTS": "Tên công đoạn đã tồn tại!"
+  },
+  "option": {
+    "OPTION_NAME_ALREADY_EXISTS": "Tên tùy chọn đã tồn tại!",
+    "ALIAS_NAME_ALREADY_EXISTS": "Tên gọi khác đã tồn tại!",
+    "OPTION_NOT_FOUND": "Không tìm thấy option!"
+  },
+  "productGroup": {
+    "PRODUCT_GROUP_NOT_FOUND": "Không tìm thấy nhóm sản phẩm!",
+    "name": "Tên nhóm sản phẩm đã tồn tại",
+    "code": "Mã nhóm sản phẩm đã tồn tại",
+    "productTypeRequired": "Loại sản phẩm là trường bắt buộc",
+    "productTypeNotExist": "Loại sản phẩm không tồn tại"
+  },
+  "productType": {
+    "NAME_CODE_VALIDATE": "Name code không tuân thủ yêu cầu",
+    "CREATE_PRODUCT_TYPE_REQUIRED": "Please fill all required data",
+    "SOMETHING_WENT_WRONG": "Đã có lỗi xảy ra!",
+    "TEMPLATE_ARTWORK_VARIANT_REQUIRED": "Mẫu thiết kế là bắt buộc!",
+    "OPTION_VARIANT_REQUIRED": "Tùy chọn biến thể là bắt buộc!",
+    "EXIST_PRODUCT_TYPE": "Mẫu sản phẩm này đã tồn tại!",
+    "NOT_EXIST_PRODUCT_TYPE": "Mẫu sản phẩm này không tồn tại trong hệ thống!"
+  },
+  "order": {
+    "invalidOrderType": "Loại đơn hàng không hợp lệ",
+    "invalidOrderShipBy": "Loại vận chuyển không hợp lệ",
+    "invalidFormatCountry": "Shipping country phải là mã quốc gia.",
+    "invalidFormatProvince": "Shipping province phải là mã tỉnh.",
+    "invalidCountryOrState": "Quốc gia hoặc tỉnh thành không hợp lệ",
+    "invalidState": "Tỉnh thành không hợp lệ",
+    "maximumQuantityOrder": "Tổng số sản phẩm tối đa trong 1 đơn hàng là 1000.",
+    "shippingServiceOrCarrierNotMatch": "Dịch vụ vận chuyển hoặc nhà vận chuyển không khớp",
+    "shippingServiceNotActive": "Dịch vụ vận chuyển không hoạt động",
+    "shippingServiceNotFound": "Dịch vụ vận chuyển hoặc đơn vị vận chuyển không tồn tại",
+    "invalidSellerOrderCodeFormat": "sellerOrderCode không được vượt quá 100 ký tự và không được chứa các ký tự đặc biệt.",
+    "invalidPostalFormat": "postalCode phải có ít nhất 4 ký tự, tối đa 12 ký tự và không được chứa ký tự đặc biệt.",
+    "invalidPostalFormatV1": "Định dạng mã ZIP không hợp lệ. Vui lòng nhập mã ZIP gồm 5 chữ số hoặc định dạng ZIP+4 (ví dụ: 12345 hoặc 12345-6789).",
+    "skuNotExistsOrInactive": "Sku/variant không tìm thấy hoặc không được kích hoạt. Sku/variant requested: {sku}",
+    "skuNotAvailable": "Sku/variant này không khả dụng. Vui lòng liên hệ bộ phận hỗ trợ để được trợ giúp. Sku/variant requested: {sku}",
+    "productNotExistsOrInactive": "Không tìm thấy sản phẩm hoặc không được kích hoạt. Sku/variant requested: {sku}{code}",
+    "storeNotExists": "Chúng tôi không tìm thấy cửa hàng của bạn hoặc cửa hàng của bạn chưa được kích hoạt. Vui lòng kiểm tra và thử lại sau.",
+    "exists": "Một đơn hàng đã tồn tại với mã đơn hàng của bạn. Mã đơn hàng của bạn: {code}",
+    "noteFoundOrderToExport": "Xuất đơn hàng không thành công. Không tìm thấy đơn hàng nào phù hợp với điều kiện.",
+    "maxLimitExport60d": "Vui lòng xuất dữ liệu trong vòng 60 ngày!",
+    "invalidOrderConfirmAddress": "Bạn chỉ có thể xác nhận địa chỉ giao hàng trong đơn hàng chưa xác minh địa chỉ!",
+    "ordNotFound": "Không tìm thấy đơn hàng hoặc đơn hàng không tồn tại. Mã: {code}",
+    "orderNotFound": "Không tìm thấy đơn hàng hoặc đơn hàng không tồn tại.",
+    "quantityRSMustLessThanOrigin": "Số lượng sản phẩm gửi lại phải nhỏ hơn số lượng ban đầu.",
+    "plsUseOtherPlatformLabelUrl": "Vui lòng sử dụng URL tệp nhãn của nền tảng khác ngoài TikTok, ví dụ: Google Drive,...",
+    "plsProcessArtworkImageServer": "Hệ thống đang kiểm tra artwork cho đơn. Vui lòng thử lại sau vài phút",
+    "orderCancel": "Huỷ đơn hàng thất bại. Vui lòng thử lại!",
+    "requiredPrintAreaMissing": "Vùng in {printAreaName} bắt buộc không tồn tại cho SKU: {sku}",
+    "shippingInfoIsUpdate": "Thông tin vận chuyển đang được cập nhật, vui lòng liên hệ Admin để được hỗ trợ",
+    "productPriceIsUpdate": "Giá sản phẩm đang được cập nhật, vui lòng liên hệ Admin để được hỗ trợ"
+  },
+  "variant": {
+    "not_found": "Không tìm thấy biến thể!",
+    "IMPORT_FAILED": "Đã xảy ra lỗi. Vui lòng kiểm tra chi tiết trong tệp đã trả về thiết bị!",
+    "cost_REQUIRED": "Chi phí là bắt buộc",
+    "fee_REQUIRED": "Phí là bắt buộc",
+    "height_REQUIRED": "Chiều cao là bắt buộc",
+    "length_REQUIRED": "Chiều dài là bắt buộc",
+    "productTypeId_REQUIRED": "Mã sản phẩm là bắt buộc",
+    "shippingCost_REQUIRED": "Chi phí vận chuyển là bắt buộc",
+    "shippingFee_REQUIRED": "Phí vận chuyển là bắt buộc",
+    "sku_REQUIRED": "SKU là bắt buộc",
+    "SKU_REQUIRED": "SKU là bắt buộc",
+    "PRICE_REQUIRED": "Giá là bắt buộc",
+    "TIER_REQUIRED": "Hạng là bắt buộc",
+    "unitShipping_REQUIRED": "Vận chuyển đơn vị là bắt buộc",
+    "variantId_REQUIRED": "Mã biến thể là bắt buộc",
+    "weight_REQUIRED": "Trọng lượng là bắt buộc",
+    "width_REQUIRED": "Chiều rộng là bắt buộc",
+    "cost_REQUIRED_NUMBER": "Chi phí phải là số",
+    "fee_REQUIRED_NUMBER": "Phí phải là số",
+    "height_REQUIRED_NUMBER": "Chiều cao phải là số",
+    "length_REQUIRED_NUMBER": "Chiều dài phải là số",
+    "productTypeId_REQUIRED_NUMBER": "Mã sản phẩm phải là số",
+    "shippingCost_REQUIRED_NUMBER": "Chi phí vận chuyển phải là số",
+    "shippingFee_REQUIRED_NUMBER": "Phí vận chuyển phải là số",
+    "sku_REQUIRED_NUMBER": "SKU phải là số",
+    "unitShipping_REQUIRED_NUMBER": "Vận chuyển đơn vị phải là số",
+    "variantId_REQUIRED_NUMBER": "Mã biến thể phải là số",
+    "weight_REQUIRED_NUMBER": "Trọng lượng phải là số",
+    "width_REQUIRED_NUMBER": "Chiều rộng phải là số",
+    "tierZero_REQUIRED_NUMBER": "Product price (Tier 0) phải là số",
+    "tierOne_REQUIRED_NUMBER": "Product price (Tier 1) phải là số",
+    "tierTwo_REQUIRED_NUMBER": "Product price (Tier 2) phải là số",
+    "tierThree_REQUIRED_NUMBER": "Product price (Tier 3) phải là số",
+    "tierFour_REQUIRED_NUMBER": "Product price (Tier 4) phải là số",
+    "additionalFee_REQUIRED_NUMBER": "Additional fee phải là số",
+    "unitAssize_REQUIRED_NUMBER": "Unit Assize phải là số",
+    "EMPTY_DATA": "Biến thể không được phép rỗng!"
+  },
+  "qc": {
+    "BARCODE_INVALID": "Barcode này không tồn tại!",
+    "BARCODE_NOT_IN_STEP": "Sản phẩm đang không thuộc bước này!",
+    "BARCODE_CANCELED": "Đơn hàng đã bị hủy, không thể sử dụng barcode này!",
+    "BARCODE_NOT_QC": "Sản phẩm đang không thuộc bước này!",
+    "QC_IMPORT_FAILED_DES": "Dữ liệu tải lên bị lỗi. Vui lòng kiểm tra các lỗi cụ thể trong tệp lỗi trả về thiết bị!",
+    "BARCODE_FAILED_IN_STEP": "Sản phẩm này đã được đánh lỗi {step}!",
+    "BARCODE_SCAN_AGAIN": "Sản phẩm này đã được quét lại!"
+  },
+  "print": {
+    "INVALID_BARCODE": "Barcode này không tồn tại!",
+    "NOT_IN_STEP": "Sản phẩm đang không thuộc bước này!",
+    "ORDER_CANCELED": "Đơn hàng đã bị hủy, không thể sử dụng barcode này!",
+    "ITEM_SCANNED": "Sản phẩm này đã được quét lại!",
+    "ITEM_HOLD": "Đơn hàng đã bị tạm giữ!"
+  },
+  "heating": {
+    "BARCODE_INVALID": "Barcode này không tồn tại!",
+    "BARCODE_NOT_IN_STEP": "Sản phẩm đang không thuộc bước này!",
+    "BARCODE_CANCELED": "Đơn hàng đã bị hủy, không thể sử dụng barcode này!",
+    "BARCODE_SCAN_AGAIN": "Sản phẩm này đã được quét lại!"
+  },
+  "package": {
+    "BARCODE_INVALID": "Barcode này không tồn tại!",
+    "BARCODE_NOT_IN_STEP": "Sản phẩm đang không thuộc bước này!",
+    "BARCODE_CANCELED": "Đơn hàng đã bị hủy, không thể sử dụng barcode này!",
+    "BARCODE_NOT_PACKAGE": "Sản phẩm đang không thuộc bước này!",
+    "BARCODE_SCAN_AGAIN": "Sản phẩm này đã được quét lại!",
+    "LABEL_REFUND_FAILED": "Hoàn lại nhãn thất bại!",
+    "CREATE_TRACKING_LOG_FAILED": "Tạo log tracking thất bại!",
+    "ORDER_NOT_FOUND": "Không tìm thấy đơn hàng!",
+    "DIMENSION_CHANGED": "Kích thước đơn hàng không thay đổi!",
+    "LABEL_TIKTOK": "Đơn hàng này là đơn hàng TikTok, không cân lại được!"
+  },
+  "label": {
+    "INVALID_BARCODE": "Barcode này không tồn tại!",
+    "NOT_IN_STEP": "Sản phẩm đang không thuộc bước này!",
+    "ORDER_CANCELED": "Đơn hàng đã bị hủy, không thể sử dụng barcode này!",
+    "BARCODE_SCAN_AGAIN": "Sản phẩm này đã được quét lại!",
+    "INVALID_TRACKING": "Đơn hàng chưa có label",
+    "BARCODE_PROCESSING": "Mã vạch này chưa hoàn thiện để quét nhãn!"
+  },
+  "ship": {
+    "NOT_FOUND": "Tracking number này không tồn tại!",
+    "NOT_SUCCESS": "Quét không thành công. Vui lòng thử lại hoặc liên hệ quản trị viên để được hỗ trợ.",
+    "BARCODE_CANCELED": "Đơn hàng đã bị hủy, tracking number không thể sử dụng được"
+  },
+  "defaultPrice": {
+    "name": "Tên giá đã tồn tại"
+  },
+  "tier": {
+    "NAME_ALREADY_EXISTS": "Tên Tier đã tồn tại",
+    "CODE_ALREADY_EXISTS": "Mã Tier đã tồn tại"
+  },
+  "shippingService": {
+    "name": "Tên dịch vụ đã tồn tại!",
+    "code": "Mã dịch vụ đã tồn tại!"
+  },
+  "shippingServicePrice": {
+    "existed": "Khoảng cân nặng đã tồn tại, vui lòng kiểm tra lại!",
+    "weightError": "Cân nặng bắt đầu không được vượt cân nặng kết thúc, vui lòng kiểm tra lại!",
+    "stateError": "Bang/tỉnh là bắt buộc, vui lòng kiểm tra lại!"
+  },
+  "carrier": {
+    "name": "Tên nhà vận chuyển đã tồn tại!",
+    "code": "Mã nhà vận chuyển đã tồn tại!"
+  },
+  "topup": {
+    "TRANSACTION_EXIST": "Mã giao dịch nạp tiền đã tồn tại!"
+  },
+  "payment": {
+    "FAILED": "Thanh toán thất bại! Vui lòng thử lại.",
+    "NO_ORDER_PAYMENT": "Không tìm thấy đơn hàng hoặc đơn hàng đã được thanh toán, huỷ đơn hàng.",
+    "INSUFFICIENT_BALANCE": "Số tiền trong tài khoản không đủ!"
+  },
+  "cancel": {
+    "INSUFFICIENT_BALANCE_ADMIN": "Số tiền trong tài khoản không đủ!",
+    "CONTACT_ADMIN": "Đã có lỗi xảy ra. Vui lòng thử lại hoặc liên hệ hỗ trợ giải quyết."
+  },
+  "surcharge": {
+    "ADD_SURCHARGE_FAILED": "Thêm phụ phí đơn hàng thất bại! Vui lòng thử lại."
+  },
+  "trackingLog": {
+    "notFound": "Không tìm thấy tracking number!",
+    "alreadyCanceled": "Tracking number đã bị hủy!",
+    "alreadyUsed": "Tracking number đã được sử dụng!",
+    "failed": "Huỷ tracking number thất bại!",
+    "notOwner": "Bạn không có quyền hủy tracking number này!"
+  },
+  "sent": {
+    "AMOUNT_GREAT_THAN_ZERO": "Số tiền phải lớn hơn 0!",
+    "INSUFFICIENT_BALANCE": "Số tiền gửi phải nhỏ hơn hoặc bằng số dư"
+  }
+}

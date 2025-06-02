@@ -1,0 +1,143 @@
+{
+  "user": {
+    "created": "Tạo người dùng thành công!",
+    "changePwd": "Đổi mật khẩu thành công!",
+    "REGISTER": "Đăng ký tài khoản thành công!",
+    "VERIFY_SUCCESS": "Tài khaonr đã được xác thực thành công!",
+    "CREATE_API_KEY_SUCCESS": "Tạo API Key thành công!",
+    "REVOKE_API_KEY_SUCCESS": "Thu hồi API Key thành công!"
+  },
+  "role": {
+    "created": "Tạo vai trò thành công!"
+  },
+  "resource": {
+    "created": "Tạo nguồn dữ liệu mới thành công!"
+  },
+  "permission": {
+    "created": "Tạo quyền mới thành công! "
+  },
+  "getData": "Lấy dữ liệu thành công!",
+  "changeStatus": "Thay đổi trạng thái thành công!",
+  "updated": "Cập nhật thành công!",
+  "confirmAddressSuccess": "Xác thực địa chỉ giao hàng thành công!",
+
+  "email": {
+    "ADD_EMAIL_SUCCESS": "Tạo mới email thành công!",
+    "ADD_VARIABLE_SUCCESS": "Tạo mới biến thành công!",
+    "UPDATE_EMAIL_SUCCESS": "Cập nhật thông tin thành công!",
+    "UPDATE_STT_EMAIL_SUCCESS": "Câp nhật trạng thái thành công!",
+    "DELETE_EMAIL_SUCCESS": "Xóa email thành công!"
+  },
+  "notification": {
+    "ADD_SYSTEM_NOTI_SUCCESS": "Tạo mới thông báo thành công!",
+    "UPDATE_SYSTEM_NOTI_SUCCESS": "Cập nhật thông tin thành công!",
+    "UPDATE_STT_SYSTEM_NOTI_SUCCESS": "Câp nhật trạng thái thành công!",
+    "DELETE_NOTI_SUCCESS": "Xóa thông báo thành công!"
+  },
+  "success": "Thành công!",
+  "createSuccess": "Tạo mới thành công!",
+
+  "suppliers": {
+    "ADD_SUPPLIER_SUCCESS": "Tạo mới nhà cung cấp thành công!",
+    "UPDATE_SUPPLIER_SUCCESS": "Cập nhật thông tin thành công!",
+    "UPDATE_STT_SUPPLIER_SUCCESS": "Câp nhật trạng thái thành công!"
+  },
+  "material": {
+    "CREATE_MATERIAL_SUCCESS": "Thêm mới nguyên vật liệu thành công!"
+  },
+
+  "unit_created": "Tạo đơn vị tính thành công!",
+  "warehouse_created": "Tạo kho mới thành công!",
+
+  "informationUpdated": "Cập nhật thông tin thành công!",
+
+  "printArea": {
+    "CREATE_PRINT_AREA_SUCCESS": "Tạo mới vùng in thành công!",
+    "UPDATE_PRINT_AREA_SUCCESS": "Cập nhật thông tin thành công!",
+    "DELETE_PRINT_AREA_SUCCESS": "Xóa vùng in thành công!"
+  },
+  "store": {
+    "CREATE_STORE_SUCCESS": "Tạo mới cửa hàng thành công"
+  },
+  "step": {
+    "CREATE_STEP_SUCCESS": "Tạo mới công đoạn sản xuất thành công!"
+  },
+  "option": {
+    "CREATE_OPTION_SUCCESS": "Tạo mới tùy chọn thành công!"
+  },
+  "common": {
+    "UPDATE_SUCCESS": "Cập nhật thông tin thành công!"
+  },
+  "productType": {
+    "CREATE_PRODUCT_TYPE": "Tạo mới loại sản phẩm thành công!"
+  },
+  "variant": {
+    "IMPORT_SUCCESS": "Tải lên file thành công! Vui lòng chờ 1 – 2 phút để chúng tôi cập nhật thông tin lên hệ thống!",
+    "SUCCESS": "Cập nhật thông tin thành công!"
+  },
+  "qc": {
+    "GET_ITEM_SUCCESS": "Lấy thông tin mặt hàng thành công!",
+    "SCAN_ERROR": "Kiểm tra chất lượng (Không Đạt) thành công!",
+    "SCAN_SUCCESS": "Kiểm tra chất lượng (Đạt) thành công!"
+  },
+  "ship": {
+    "SCAN_SUCCESS": "Đơn hàng đã hoàn thành!"
+  },
+  "heating": {
+    "GET_ITEM_SUCCESS": "Lấy thông tin mặt hàng thành công!",
+    "SCAN_ERROR": "Kiểm tra chất lượng (Không Đạt) thành công!",
+    "SCAN_SUCCESS": "Sản phẩm này đã được ép nhiệt!"
+  },
+
+  "order": {
+    "created": "Đơn hàng của bạn đã được tạo thành công.",
+    "requestResend": "Gửi yêu cầu gửi lại đơn hàng thành công!",
+    "orderCancel": "Hủy đơn hàng thành công!",
+    "orderHold": "Tạm giữ đơn hàng thành công!",
+    "orderUnHold": "Bỏ tạm giữ đơn hàng thành công!",
+    "backErrArtSuccess": "Gửi lỗi ảnh thiết kế thành công!",
+    "orderWeighted": "Đơn hàng đã được cân thành công!",
+    "orderPackaged": "Đơn hàng đã được đóng gói thành công!",
+    "updateNoteOrder": "Cập nhật ghi chú đơn hàng thành công!"
+  },
+
+  "print": {
+    "PRINT_FAILED": "Đánh dấu sản phẩm không đạt bước in thành công!"
+  },
+
+  "package": {
+    "SCAN_SUCCESS": "Đóng gói mặt hàng thành công!"
+  },
+  "assizes": {
+    "SCAN_SUCCESS": "Đơn hàng đã được cân!",
+    "SCAN_SUCCESS_BUY_LABEL": "Đơn hàng đã được cân, đang mua nhãn!"
+  },
+  "label": {
+    "LABELED": "Đơn hàng đã được dán nhãn!"
+  },
+  "tier": {
+    "created": "Tạo tier mới thành công!",
+    "updated": "Cập nhật thông tin thành công!"
+  },
+  "topup": {
+    "CREATE_TOPUP_SUCCESS": "Tạo yêu cầu nạp tiền thành công. Vui lòng chờ kế toán kiểm tra và xác nhận!",
+    "DECLINE_TOPUP_SUCCESS": "Từ chối nạp tiền thành công!",
+    "ACCEPT_TOPUP_SUCCESS": "Xác nhận yêu cầu nạp tiền thành công!"
+  },
+  "payment": {
+    "SUCCESS": "Thanh toán đơn hàng thành công!",
+    "SEND_SUCCESS": "Gửi tiền cho người bán {email} thành công!"
+  },
+  "surcharge": {
+    "ADD_SURCHARGE_SUCCESS": "Thêm phụ phí cho đơn hàng thành công!"
+  },
+  "refund": {
+    "SUCCESS": "Hoàn tiền đơn hàng thành công!"
+  },
+  "trackingLog": {
+    "trackingCancel": "Hủy tracking number thành công!"
+  },
+  "orderDeclaration": {
+    "SUCCESS": "Khai báo hải quan thành công!"
+  }
+}
