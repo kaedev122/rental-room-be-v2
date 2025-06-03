@@ -9,6 +9,7 @@ import { ResponseDto } from '@common/dtos';
 import {
   generateHash,
   generateRandomNumber,
+  padNumber,
   validateHash,
 } from '@common/utils';
 import { UserRoleEnum, UserStatusEnum } from '@constants/user';
@@ -31,6 +32,8 @@ import {
 } from './auth.dtos';
 import { ILogin } from './auth.interface';
 import { GenderEnum } from '@constants/gender';
+import { PAD_NUMBER_PREFIX } from '@constants/patterns';
+import { CounterService } from '@shared/counter/counter.service';
 
 @Injectable()
 export class AuthService {
@@ -40,6 +43,7 @@ export class AuthService {
     private translationService: TranslationService,
     private configService: ApiConfigService,
     private jwtService: JwtService,
+    private counterService: CounterService,
   ) {}
 
   private getUserCodeByNumber(userNumber: number): string {
@@ -97,7 +101,8 @@ export class AuthService {
 
     const userFound = await this.userModel
       .findOne({ username: payload.username })
-      .select('password');
+      .select('password role isDeleted status _id');
+
     if (!userFound) {
       await this.thrownBadRequest(
         'error.user.USERNAME_OR_PWD_INVALID',
@@ -397,6 +402,7 @@ export class AuthService {
   async initializeAdminAccount() {
     const admin = await this.userModel.findOne({ role: UserRoleEnum.ADMIN });
     const password = generateHash(process.env.ADMIN_PASSWORD);
+    const numberUser = await this.counterService.increaseCounterNumber('userCode');
     if (!admin) {
       await this.userModel.create({
         username: process.env.ADMIN_USERNAME,
@@ -410,8 +416,7 @@ export class AuthService {
         address: 'admin',
         gender: GenderEnum.OTHER,
         language: LanguageCode.en_US,
-        isDeleted: false,
-        code: 'admin',
+        code: padNumber(PAD_NUMBER_PREFIX.USER, numberUser)
       });
     }
   }

@@ -7,18 +7,16 @@ import {
 import { ApiBearerAuth, ApiUnauthorizedResponse } from '@nestjs/swagger';
 
 import { type UserRoleEnum } from '../constants';
-import { AuthGuard, RolesGuard } from '../guards';
+import { AuthGuard, RoleGuard } from '../guards';
 import { AuthUserInterceptor } from '../interceptors';
 
 export function Auth(
-  roles: UserRoleEnum[] = [],
-  options?: Partial<{ public: boolean }>,
+  role: UserRoleEnum[] = [],
 ): MethodDecorator {
-  const isPublicRoute = options?.public;
 
   return applyDecorators(
-    SetMetadata('roles', roles),
-    UseGuards(AuthGuard({ public: isPublicRoute }), RolesGuard),
+    SetMetadata('role', role),
+    UseGuards(AuthGuard(), RoleGuard),
     ApiBearerAuth(),
     UseInterceptors(AuthUserInterceptor),
     ApiUnauthorizedResponse({ description: 'Unauthorized' }),

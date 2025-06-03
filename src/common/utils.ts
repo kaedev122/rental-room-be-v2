@@ -6,6 +6,7 @@ import { CallbackWithoutResultAndOptionalError } from 'mongoose';
 import { SearchCondition } from '../types/common.types';
 import axios from 'axios';
 import { Logger } from 'winston';
+import { PAD_NUMBER_PREFIX } from '@constants/patterns';
 
 /**
  * generate hash from password or string
@@ -237,4 +238,39 @@ export async function safeCommitTransaction(
       throw err;
     }
   }
+}
+
+export const padNumber = (prefix: string, num: number) => {
+  let paddedFill = '0000000';
+  let length = 5;
+
+  switch (prefix) {
+    case PAD_NUMBER_PREFIX.APARTMENT:
+      length = 5;
+      paddedFill = '0000000';
+      break;
+    case PAD_NUMBER_PREFIX.BILL:
+      length = 5;
+      paddedFill = '0000000';
+      break;
+    case PAD_NUMBER_PREFIX.CONTRACT:
+      length = 5;
+      paddedFill = '0000000';
+      break;
+    case PAD_NUMBER_PREFIX.CUSTOMER:
+      length = 5;
+      paddedFill = '0000000';
+      break;
+    case PAD_NUMBER_PREFIX.PAYMENT_RECEIPT:
+      length = 5;
+      paddedFill = '0000000';
+      break;
+    case PAD_NUMBER_PREFIX.USER:
+      length = 5;
+      paddedFill = '0000000';
+      break;
+  }
+
+  const paddedNum = paddedFill + num;
+  return prefix + paddedNum.slice(-length);
 }

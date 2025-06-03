@@ -21,6 +21,8 @@ import {
 } from './user.dtos';
 import { UserEntity } from './user.entity';
 import { UserService } from './user.service';
+import { UserRoleEnum } from '@constants/user';
+import { NewUserDto } from './user.dtos';
 
 @Controller({
   path: 'user',
@@ -30,26 +32,22 @@ import { UserService } from './user.service';
 export class UserController {
   constructor(private userService: UserService) {}
 
-  // @Post('/new')
-  // @Auth()
-  // @HttpCode(HttpStatus.OK)
-  // async createNewUser(
-  //   @Body() payload: NewUserDto,
-  //   @AuthUser() user: UserEntity,
-  //   @Req() req: IRequestLanguage,
-  // ): Promise<ResponseDto> {
-  //   const { requestedLang } = req;
-  //   const origin = req.get('origin');
-  //   return await this.userService.createNewUser(
-  //     payload,
-  //     user,
-  //     origin,
-  //     requestedLang,
-  //   );
-  // }
+  @Post('/new')
+  @Auth([UserRoleEnum.ADMIN])
+  @HttpCode(HttpStatus.OK)
+  async createNewUser(
+    @Body() payload: NewUserDto,
+    @Req() req: IRequestLanguage,
+  ): Promise<ResponseDto> {
+    const { requestedLang } = req;
+    return await this.userService.createNewUser(
+      payload,
+      requestedLang,
+    );
+  }
 
   @Get('/list')
-  @Auth()
+  @Auth([UserRoleEnum.ADMIN])
   @HttpCode(HttpStatus.OK)
   @ApiOkResponse({
     type: ResponseDto,

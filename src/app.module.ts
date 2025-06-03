@@ -19,6 +19,8 @@ import { RequestedWithMiddleware } from '@shared/middleware';
 import { RequestedWithCaptchaMiddleware } from './shared/middleware/captcha-key-middleware';
 import { ApiConfigService } from './shared/services';
 import { SharedModule } from './shared/shared.module';
+import { CounterService } from './shared/counter/counter.service';
+import { CounterModule } from './shared/counter/counter.module';
 // import { LoggerMiddleware } from 'middleware/logger.middleware';
 
 @Module({
@@ -95,20 +97,22 @@ import { SharedModule } from './shared/shared.module';
     }),
     UserModule,
     AuthModule,
+    CounterModule,
   ],
   controllers: [AppController],
   providers: [
     AppService,
+    CounterService,
   ],
 })
 export class AppModule implements NestModule {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   configure(consumer: MiddlewareConsumer) {
     consumer.apply(RequestedWithMiddleware).forRoutes('*');
-    consumer
-      .apply(RequestedWithCaptchaMiddleware)
-      .forRoutes(
-        { path: 'v1/auth/login', method: RequestMethod.POST },
-      );
+    // consumer
+    //   .apply(RequestedWithCaptchaMiddleware)
+    //   .forRoutes(
+    //     { path: 'v1/auth/login', method: RequestMethod.POST },
+    //   );
   }
 }

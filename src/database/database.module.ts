@@ -2,7 +2,10 @@ import { Global, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { UserEntity, UserSchema } from './../modules/user/user.entity';
-
+import {
+  CounterEntity,
+  CounterSchema,
+} from './../shared/counter/counter.entity';
 import { ApiConfigService } from './../shared/services';
 import mongoose from 'mongoose';
 import { Document } from 'mongoose';
@@ -19,6 +22,8 @@ import { Document } from 'mongoose';
     }),
     MongooseModule.forFeatureAsync([
       { name: UserEntity.name, useFactory: () => UserSchema },
+      { name: CounterEntity.name, useFactory: () => CounterSchema },
+
       // {
       //   name: SubOrderItemEntity.name,
       //   imports: [OrderModule],

@@ -1,7 +1,7 @@
 export enum UserStatusEnum {
   ACTIVE = 'active',
   INACTIVE = 'inactive',
-  UNVERIFIED = 'unverified',
+  // UNVERIFIED = 'unverified',
 }
 
 export const ListUserStatusEnum: string[] = Object.values(UserStatusEnum);

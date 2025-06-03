@@ -1,3 +1,5 @@
+import { GenderEnum } from '@constants/gender';
+import { UserRoleEnum } from '@constants/user';
 import { ApiProperty } from '@nestjs/swagger';
 import { Type } from 'class-transformer';
 import { IsDate, IsOptional, IsString } from 'class-validator';
@@ -25,11 +27,23 @@ export class NewUserDto {
 
   @ApiProperty({ required: false })
   @IsOptional()
-  gender?: string;
+  gender?: GenderEnum;
 
   @ApiProperty({ required: false })
   @IsOptional()
   address?: string;
+
+  @ApiProperty()
+  @IsOptional()
+  password: string;
+
+  @ApiProperty()
+  @IsOptional()
+  role: UserRoleEnum;
+
+  @ApiProperty()
+  @IsOptional()
+  username: string;
 }
 
 export class UpdateUserDto {

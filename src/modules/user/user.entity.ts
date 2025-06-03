@@ -48,7 +48,7 @@ export class UserEntity extends DatabaseEntityAbstract {
 
   @Prop({
     enum: UserStatusEnum,
-    default: UserStatusEnum.UNVERIFIED,
+    default: UserStatusEnum.ACTIVE,
   })
   status: UserStatusEnum;
 
@@ -77,10 +77,10 @@ export class UserEntity extends DatabaseEntityAbstract {
   @Prop({
     required: false,
     trim: true,
-    minlength: 2,
     maxlength: 100,
+    default: '',
   })
-  email?: string;
+  email?: string | '';
 
   @Prop({
     required: true,
@@ -158,5 +158,5 @@ UserSchema.pre('save', function (next: CallbackWithoutResultAndOptionalError) {
 
 UserSchema.pre('save', function () {
   this.fullName = `${this.firstName || ''} ${this.lastName}`;
-  this.searchKey = `${this.code}${this.phone}${this.firstName || ''}${this.lastName}`.toLowerCase();
+  this.searchKey = `${this.username}${this.code}${this.phone}${this.firstName || ''}${this.lastName}`.toLowerCase();
 });

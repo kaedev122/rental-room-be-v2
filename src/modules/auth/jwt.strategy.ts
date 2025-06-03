@@ -8,7 +8,7 @@ import { PassportStrategy } from '@nestjs/passport';
 import { Types } from 'mongoose';
 import { ExtractJwt, Strategy } from 'passport-jwt';
 
-import { UserStatusEnum, TokenType } from '../../constants';
+import { UserStatusEnum, TokenType, UserRoleEnum } from '../../constants';
 import { ApiConfigService } from '../../shared/services';
 import { UserEntity } from '../user/user.entity';
 import { Model } from 'mongoose';
@@ -31,27 +31,37 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   async validate(args: {
     userId: string;
     type: TokenType;
+    role: UserRoleEnum;
   }): Promise<UserEntity> {
     if (args.type !== TokenType.ACCESS_TOKEN) {
       throw new UnauthorizedException();
     }
 
-    const user = await this.userModel.findOne({
-      _id: new Types.ObjectId(args.userId) as never,
-    });
+    try {
+      const user = await this.userModel.findOne({
+        _id: new Types.ObjectId(args.userId) as never,
+      });
+      if (!user) {
+        throw new UnauthorizedException();
+      }
 
-    if (!user) throw new UnauthorizedException();
+      if (user?.status === UserStatusEnum.INACTIVE) {
+        throw new HttpException(
+          'error.user.ACCOUNT_WAS_INACTIVE',
+          HttpStatus.BAD_REQUEST,
+        );
+      }
 
-    if (user?.status === UserStatusEnum.UNVERIFIED) {
-      throw new HttpException(
-        'error.user.UNVERIFIED_MESSAGE',
-        HttpStatus.BAD_REQUEST,
-      );
-    }
+      if (user.status !== UserStatusEnum.ACTIVE) {
+        throw new UnauthorizedException();
+      }
 
-    if (!user || user.status !== UserStatusEnum.ACTIVE)
+      // Convert Mongoose document to plain JavaScript object
+      const userObject = user.toObject ? user.toObject() : JSON.parse(JSON.stringify(user));
+      
+      return userObject;
+    } catch (error) {
       throw new UnauthorizedException();
-
-    return { ...user };
+    }
   }
 }

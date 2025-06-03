@@ -109,7 +109,7 @@ export class UserDto {
 
   @ApiProperty()
   @IsOptional()
-  gender?: GenderEnum;
+  gender?: GenderEnum | '';
 
   @ApiProperty()
   @IsOptional()
@@ -133,7 +133,7 @@ export class UserDto {
     this.avatar = user.avatar;
     this.birthday = user.birthday;
     this.address = user.address;
-    this.gender = user.gender;
+    this.gender = user.gender || '';
     this.role = user.role;
     this.searchKey = user.searchKey;
   }

@@ -6,7 +6,7 @@ import { UserModule } from './../user/user.module';
 import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { JwtStrategy } from './jwt.strategy';
-import { PublicStrategy } from './public.strategy';
+import { CounterModule } from '@shared/counter/counter.module';
 
 @Module({
   imports: [
@@ -21,11 +21,11 @@ import { PublicStrategy } from './public.strategy';
       }),
       inject: [ApiConfigService],
     }),
+    CounterModule,
   ],
   providers: [
     AuthService,
     JwtStrategy,
-    PublicStrategy,
   ],
   controllers: [AuthController],
   exports: [JwtModule, AuthService],
